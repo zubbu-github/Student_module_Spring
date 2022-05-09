@@ -30,6 +30,6 @@ public class StudentService {
 
 	public void delete(Integer id) 
 	{
-		repo.deleteById(id);
+		 repo.deleteById(id);
 	}
 }

@@ -61,12 +61,12 @@ public class StudentController {
 	}
 	
 	// RESTful API method for Delete operation 
-/*		@DeleteMapping("/studentmodule/{id}")
-		public void delete(@PathVariable Integer id)
+	/*	@DeleteMapping("/studentmodule/{id}")
+		public void delete( Integer id)
 		{
 			service.delete(id);
-		}
- */
+		}*/
+ 
   }
 	
 }

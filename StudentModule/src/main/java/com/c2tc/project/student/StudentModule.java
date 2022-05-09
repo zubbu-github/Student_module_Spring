@@ -4,8 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "studentmodule")
 public class StudentModule {
 	
 	@Id
@@ -16,7 +18,7 @@ public class StudentModule {
 	private String qualification;
 	private String course;
 	private int year;
-	private int hallTicketNo;
+	private int hallticketno;
 	private String college;
 	private String certificate;
 
@@ -33,7 +35,7 @@ public class StudentModule {
 		this.qualification = qualification;
 		this.course = course;
 		this.year = year;
-		this.hallTicketNo = hallTicketNo;
+		this.hallticketno = hallTicketNo;
 		this.college = college;
 		this.certificate = certificate;
 	}
@@ -73,12 +75,15 @@ public class StudentModule {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	public int getHallTicketNo() {
-		return hallTicketNo;
+	
+	public int getHallticketno() {
+		return hallticketno;
 	}
-	public void setHallTicketNo(int hallTicketNo) {
-		this.hallTicketNo = hallTicketNo;
+
+	public void setHallticketno(int hallticketno) {
+		this.hallticketno = hallticketno;
 	}
+
 	public String getCollege() {
 		return college;
 	}
@@ -95,7 +100,7 @@ public class StudentModule {
 	@Override
 	public String toString() {
 		return "StudentModule [id=" + id + ", name=" + name + ", roll=" + roll + ", qualification=" + qualification
-				+ ", course=" + course + ", year=" + year + ", hallTicketNo=" + hallTicketNo + ", college=" + college
+				+ ", course=" + course + ", year=" + year + ", hallticketno=" + hallticketno + ", college=" + college
 				+ ", certificate=" + certificate + "]";
 	}
 	
